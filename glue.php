@@ -44,7 +44,8 @@
         static function stick ($urls) {
 
             $method = strtoupper($_SERVER['REQUEST_METHOD']);
-            $path = $_SERVER['REQUEST_URI'];
+
+            $path = strtok($_SERVER['REQUEST_URI'], "?");
 
             if(strpos($path, "/index.php") == 0){
                 $path = substr($path, 10);
