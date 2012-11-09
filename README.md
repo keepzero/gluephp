@@ -1,11 +1,18 @@
-Glue
-====
+Glue mod
+========
 
 Author: Joe Topjian, joe@topjian.net
+Mod by: KeepZero, i@keepzero.net
 
 Glue is a simple PHP class that maps URLs to classes. The concepts are similar to web.py for Python.
 
 Information on how to use Glue can be found at http://gluephp.com.
+
+DIFF with origin glue.php
+=========================
+- Remove URL rewrite require, now not require URL rewirte.
+- Splite the REQUEST_URI with a '?' char, not require special regex in urls
+
 
 License
 =======
